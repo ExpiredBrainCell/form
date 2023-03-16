@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .upper {
+           
+            display: flex;
+            flex-direction: row;
+        }
+
+        .upper div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            margin-bottom: 0.3em;
+        }
+
+        .upper div input {
+            width: 100%;
+
+        }
+
+        .lower {
+           margin-left: 250px;
+        }
+
+        .lower div {
+            margin-bottom: 0.3em;
+        }
+
+        .final {
+            text-align: left;
+           margin-bottom: 0.5em;
+
+        }
+        .end{
+           margin-left: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="upper">
+            <div> <label for="name">First Name</label><input type="text"></div>
+            <div> <label for="name">Middle Name</label><input type="text"></div>
+            <div><label for="name">Last Name</label><input type="text"></div>
+        </div>
+        <div class="lower">
+            <div><input type="email" name="email" id="email" placeholder="email"></div>
+            <div><input type="phone number" name="phone" placeholder="phone number"></div>
+
+            <div> I am a <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+                    <div>
+                        Program:
+                 <label>       <input type="checkbox" >Computer</label>
+                 <label>       <input type="checkbox" >Civil </label> 
+                 <label>    <input type="checkbox" >Arch   </label>
+                    </div>
+                </div>
+                <div class="final">
+                    Bio <br>
+                    <textarea name="bio" id="bio" cols="80" rows="10" placeholder="Bio"></textarea><br></div>
+                  <div class="end"><input type="reset">
+                    <input type="submit"></div>
+              
+
+    </form>
+</body>
+
+</html>
